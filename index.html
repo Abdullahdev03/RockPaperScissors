@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Simulation</title>
+    <style>
+        canvas {
+            border: 2px solid white;
+            display: block;
+            margin: 0 auto;
+            background-color: black;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            color: red;
+        }
+        
+        .controls {
+            margin: 10px;
+        }
+        
+        button,
+        input {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>‼️ Rock vs Paper vs Scissors ‼️</h1>
+    <div class="controls">
+        <button id="increaseSpeed">Увеличить скорость</button>
+        <button id="restartGame">Возобновить игру</button>
+        <input type="number" id="objectCount" placeholder="Количество объектов" min="10" value="33">
+        <button id="setObjectCount">Установить количество</button>
+    </div>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <script src="app.js"></script>
+</body>
+
+</html>
